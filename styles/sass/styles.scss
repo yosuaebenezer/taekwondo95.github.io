@@ -1,0 +1,420 @@
+// h4{
+//     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+//     background-image: linear-gradient(to right, #f9989f, #fccb8f,#faf096);
+//     color: transparent;
+//     -webkit-background-clip: text;
+// }
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    // border: 1px solid rgb(227, 140, 140);
+}
+
+body{
+    font-family: 'Montserrat Alternates', sans-serif;
+    background-color: whitesmoke;
+    cursor: url("./highlight/tkd.png"), auto;
+}
+
+    nav{
+        display: flex;
+        background-color: black;
+        justify-content: space-around;
+        align-items: center;
+        height: 2.2em;
+        color: aliceblue;
+
+        .logo h4{
+            font-family: 'Protest Revolution', sans-serif;
+            font-weight: bolder;
+            letter-spacing: 1px;
+            font-size: 25px;
+            margin-left: -40%;
+        }
+
+        ul{
+            display: flex;
+            list-style-type: none;
+            width: 30%;
+            margin-right: -10%;
+            justify-content: space-between;
+            
+            li a{
+                text-decoration: none;
+                color: aliceblue;
+                font-family: 'Protest Riot', sans-serif;
+            }
+        }
+    }
+
+
+
+.baris1{
+    background-color: rgb(133, 163, 163);
+    width: 100%;
+    height: 430px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    .highlight{
+        font-size: 40px;
+        font-family: 'Protest Riot', sans-serif;    
+        text-shadow: 5px 2px 3px  whitesmoke;
+    }
+
+    .slider{
+        display: flex;
+        border-radius: 20px;
+        overflow: hidden;
+        height: 380px;
+        margin-top: -5px;
+        width: 700px;
+        background-color: azure;
+        box-shadow: 1px 1px 7px 2px black;
+
+        .slides{
+            display: flex;
+            align-items: center;
+
+            input{
+                display: none;
+            }
+
+            .slide{
+                // width: 20%;
+                transition: 3s;
+                display: flex;
+                margin-top: -15px;
+                flex-direction: column;
+                align-items: center;
+
+                h5{
+                    margin-top: 10px;
+                }
+    
+                img{
+                    width: 700px;
+                    height: 340px;
+                }
+            }
+
+            .manual-nav{
+                position: absolute;
+                width: 700px;
+                margin-top: 260px;
+                display: flex;
+                justify-content: center;
+
+                .manual-btn{
+                    border: 2px solid white;
+                    padding: 5px;
+                    border-radius: 10px;
+                    cursor: pointer;
+                    transition: 2s;
+                }
+
+                .manual-btn:not(:last-child){
+                    margin-right: 40px;
+                }
+
+                .manual-btn:hover{
+                    background-color: bisque;
+                }
+
+                .manual-btn:active{
+                    background-color: b isque;
+                }
+            }
+
+
+            #radio1:checked ~ .first{
+                margin-left: 0;
+            }
+
+            #radio2:checked ~ .first{
+                margin-left: -33.5%;
+            }
+
+            #radio3:checked ~ .first{
+                margin-left: -67%;
+            }
+
+            #radio4:checked ~ .first{
+                margin-left: -80%;
+            }
+        }
+
+       
+    }
+}
+
+.baris2{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+
+
+    .pelatih{
+        font-family: 'Protest Riot', sans-serif;    
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .pelatih-utama{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.sabam{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    justify-content: space-around;
+    margin-bottom: 50px;
+    margin-right: 60px;
+
+
+    img{
+        border-radius: 50%;
+        border: 2px solid black;
+        box-shadow: 2px 4px 10px black;
+    }
+
+    h4{
+        padding-top: 10px;
+    }
+}
+
+.baris3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .about{
+        font-size: 40px;
+        font-family: 'Protest Riot', sans-serif;    
+    }
+
+    .about-tkd95{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 65px;
+        margin-top: -40px;
+
+        img{
+            width: 650px;
+            border-radius: 30px;
+            box-shadow: 2px 3px 4px black;
+        }
+
+        p{
+            margin-left: 30px;
+            text-align: justify;
+            align-items: center;
+            padding-top: 50px;
+        }
+    }
+}
+
+.footer{
+    display: flex;
+    width: 100%;
+    bottom: 0;
+    align-items: center;
+    padding: 5px;
+    justify-content: center;
+    margin-top: 20px;
+    background-color: rgb(78, 95, 95);
+    color: aliceblue;  
+    position: fixed;  
+}
+
+
+
+
+
+// ------------------------------------ CSS DOJANG
+.dojang{
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-size: 35px;
+    font-family: 'Protest Riot', sans-serif;    
+
+}
+.unit{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-top: 21px;
+    margin-bottom: 40px;
+
+    .sekolah{
+        display: flex;
+        margin-bottom: 60px;
+
+        img{
+            margin-left: -20px;
+            box-shadow: 1px 2px 5px black;
+            border-radius: 6px;
+        }
+
+        p{
+            margin-top: 30px;
+            padding-left: 40px;
+            width: 600px;
+            align-items: center;
+            
+            b{
+                font-size: 20px;
+            }
+        }
+        
+    }
+}
+
+
+
+
+
+
+
+.footer{
+    img{
+        margin-left: 5px;
+    }
+}
+
+
+// Hamburger MENU
+.menu-toogle{
+    display: flex;
+    flex-direction: column;
+    height: 25px;
+    justify-content: space-between;
+    align-items: center;
+
+    span{
+        display: block;
+        width: 28px;
+        height: 4px;
+        background-color: rgb(255, 255, 255);
+        border-radius: 3px;
+
+    }
+}
+
+// RESPONSIVE
+// ukuran laptop
+@media screen  and (max-width: 1350px){
+    .menu-toogle{
+        display: none;
+    }
+}
+
+
+//ukuran 900px
+@media screen  and (max-width: 900px){
+    nav{
+        padding: 0px 70px 0px 0px;
+        .menu-toogle{
+            display: none;
+        }
+        li{
+            margin-right: 10px;
+        }
+}
+}
+
+
+
+// ukuran tab
+@media screen  and (max-width: 770px){
+        nav{
+            justify-content: flex-start;
+            .menu-toogle{
+                display: flex;
+                margin-left: 10px;
+                z-index: 2;
+            }
+            
+            h4{
+                padding-left: 160%;
+                width: 230px;
+            }
+            ul{
+                flex-direction: column;
+                margin-top: 110%;
+                align-items: center;
+                justify-content: center;
+                    
+                li{
+                    padding-bottom: 50px;
+                }
+                li a{
+                    color: black;
+                }
+            }
+    
+            .hidden{
+                display: none;
+            }
+    
+        }
+    
+        ul {
+            margin-right: 100% !important;
+            margin-left: -5%;
+        }
+}
+
+
+// ukuran hp
+@media screen  and (max-width: 576px){
+    nav{
+        justify-content: flex-start;
+        .menu-toogle{
+            display: flex;
+            margin-left: 10px;
+            z-index: 2;
+        }
+        
+        h4{
+            padding-left: 100%;
+            width: 230px;
+        }
+        ul{
+            flex-direction: column;
+            margin-top: 110%;
+            align-items: center;
+            justify-content: center;
+                
+            li{
+                padding-bottom: 50px;
+            }
+            li a{
+                color: black;
+            }
+        }
+
+        .hidden{
+            display: none;
+        }
+
+    }
+
+    ul {
+        margin-right: 100% !important;
+        margin-left: -5%;
+    }
+}
